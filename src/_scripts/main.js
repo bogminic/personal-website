@@ -19,6 +19,7 @@ var myFeature = {
       this.$nav = this.$header.find('.nav');
       this.$navItem = this.$nav.find('.nav__item');
       this.$btn = this.$header.find('.btn');
+      this.$arrow = this.$body.find('.intro__arrow');   
 
       //portofolio variables
       this.$portofolio = this.$body.find('.mix');
@@ -39,6 +40,7 @@ var myFeature = {
       this.$btn.on('click', this.toggleClass.bind(this));
       this.$navItem.on('click', this.toggleClass.bind(this));
       this.$navItem.on('click', this.smoothScroll);
+      this.$arrow.on('click', this.smoothScroll);
       this.$formSend.on('click', this.sendContact.bind(this));
       $(document).on('scroll', this.onScroll.bind(this));
 
