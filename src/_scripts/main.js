@@ -47,7 +47,8 @@ var myFeature = {
     toggleClass: function(){
       if ($(window).width() < 768) {
         this.$btn.toggleClass('is-clicked');
-        this.$nav.toggleClass('is-open');
+        this.$nav.slideToggle(350);
+
       }
     },
     // smoothscroll function
@@ -90,8 +91,9 @@ var myFeature = {
       if (this.$body.length){
         if ($(window).scrollTop()>= $starPoint ) {
             this.$header.slideDown();
+           
         }
-        else if ($(window).scrollTop()==0) {
+        else if ($(window).scrollTop()==0 && $(window).width() >= 768) {
             this.$header.slideUp();
         }
        }

@@ -40,9 +40,6 @@
     text-align: center;
     border-bottom: 1px solid $color-main;
   }
-  &.is-open{
-    display: flex;
-  }
   @media (min-width: $breakpoint-mobile) {
     display: flex;
     position: static;
@@ -87,7 +84,7 @@
     position: absolute;
     left: 5px;
     top: 10px;
-    transition: 0.55s 0.5s;
+    transition: 0.35s;
     &:first-child{
       position: absolute;
       top: 0;
