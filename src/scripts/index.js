@@ -13,9 +13,6 @@ var myFeature = {
   init: function () {
     this.cacheDom()
     this.bindEvents()
-    this.lazySizesInit()
-    this.mixItUpInit()
-    this.colorBoxInit()
   },
   // cache DOM elements
   cacheDom: function () {
@@ -102,43 +99,6 @@ var myFeature = {
       }
     }
   },
-  // mixItUp init function
-  mixItUpInit: function () {
-    this.$portofolio.mixItUp({
-      controls: {
-        activeClass: 'is-active'
-      },
-      layout: {
-        display: 'block'
-      },
-      selectors: {
-        target: '.mix__item',
-        filter: '.filter__item'
-      }
-    })
-  },
-  // lazyloading init function
-  lazySizesInit: function () {
-    window.lazySizesConfig = window.lazySizesConfig || {}
-    // only for demo in production I would use normal expand option
-    window.lazySizesConfig.expand = 3
-  },
-  // colorbox init function + fix for resposive images
-  colorBoxInit: function () {
-    var cboxOptions = {
-      width: '95%',
-      height: '95%',
-      maxWidth: '960px',
-      maxHeight: '960px'
-    }
-    this.$colorbox.colorbox(cboxOptions)
-    $(window).resize(function () {
-      $.colorbox.resize({
-        width: window.innerWidth > parseInt(cboxOptions.maxWidth) ? cboxOptions.maxWidth : cboxOptions.width,
-        height: window.innerHeight > parseInt(cboxOptions.maxHeight) ? cboxOptions.maxHeight : cboxOptions.height
-      })
-    })
-  },
   sendContact: function () {
     var valid
     valid = this.validateContact()
@@ -152,7 +112,7 @@ var myFeature = {
           this.$formChildren.prop('disabled', true)
           this.$sendStatus.html(data)
         },
-        error: function () {}
+        error: function () { }
       })
     }
   },

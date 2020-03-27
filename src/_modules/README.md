@@ -10,7 +10,7 @@ An example link module:
 └── link
     ├── __tests__
     |   └── link.spec.js
-    ├── link.{jade,nunjucks}
+    ├── link.{pug,nunjucks}
     ├── link.js
     └── link.scss
 ```
@@ -49,7 +49,6 @@ This will place your new module within the corresponding atomic folder like the 
     └── footer.jade
     └── header.jade
     └── intro.jade
-    └── portofolio.jade
     └── resume.jade
 └── _scripts
 └── _styles

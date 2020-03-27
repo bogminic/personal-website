@@ -1,7 +1,3 @@
-.contact {
-  background-color: $color-contast;
-}
-
 .input {
   display: block;
   width: 100%;
@@ -13,6 +9,8 @@
   outline: medium none;
   padding: 15px;
   margin-bottom: 15px;
+  background: $color-contast;
+  color: $color-grey;
 
   @media (min-width: $breakpoint-mobile) {
     width: 66%;
@@ -33,8 +31,9 @@
   outline: medium none;
 
   &:hover {
-    background: white;
+    background: $color-contast;
     color: $color-main;
+    cursor: pointer;
   }
 
   &:disabled {
