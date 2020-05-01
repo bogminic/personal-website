@@ -7,17 +7,17 @@
   white-space: nowrap;
   color: white;
 
-  &--html {
-    width: 89%;
+  &--50 {
+    width: 50%;
     margin-top: 50px;
   }
 
-  &--css {
-    width: 99%;
+  &--90 {
+    width: 90%;
   }
 
-  &--js {
-    width: 75%;
+  &--25 {
+    width: 25%;
     margin-bottom: 25px;
   }
 }
