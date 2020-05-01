@@ -25,10 +25,6 @@ var myFeature = {
     this.$btn = this.$header.find('.btn')
     this.$arrow = this.$body.find('.intro__arrow')
 
-    // portofolio variables
-    this.$portofolio = this.$body.find('.mix')
-    this.$colorbox = this.$body.find('.mix__link').not('.mix__link.mix__link--web')
-
     // contact form variables
     this.$form = this.$body.find('#contact-form')
     this.$formChildren = this.$form.children()

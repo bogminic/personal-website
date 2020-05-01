@@ -15,16 +15,28 @@
     position: absolute;
     bottom: 10px;
     color: white;
-    font-size: 36px;
-    margin-left: -25.2px;
-    left: 50%;
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
+    font-size: 25px;
     animation: bounce 2s infinite;
 
     &:hover {
       color: $color-main;
       cursor: pointer;
+    }
+
+    &::after {
+      content: "\e806";
+      font-family: "bmn-fonts", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: 0.2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      margin-left: 0.2em;
     }
   }
 
