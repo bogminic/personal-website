@@ -180,6 +180,7 @@ const productionConfig = merge([
       }
     }
   }),
+  parts.loadStaticFiles(),
   parts.loadImages({
     include: paths.app,
     options: {
@@ -189,7 +190,6 @@ const productionConfig = merge([
   }),
   // should go after loading images
   parts.optimizeImages(),
-  parts.loadStaticFiles()
 ])
 
 const developmentConfig = merge([
@@ -201,6 +201,7 @@ const developmentConfig = merge([
     port: process.env.PORT
   }),
   parts.loadCSS({ include: paths.app, use: [cssPreprocessorLoader] }),
+  parts.loadStaticFiles(),
   parts.loadImages({ include: paths.app }),
   parts.loadJS({ include: paths.app })
 ])

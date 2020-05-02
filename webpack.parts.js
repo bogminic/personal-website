@@ -253,7 +253,11 @@ exports.loadStaticFiles = () => ({
     new CopyPlugin([
         { from: 'favicon.ico', to: '' },
         { from: 'contact-form.php', to: '' },
-        { from: 'robots.txt', to: '' }
+        { from: 'robots.txt', to: '' },
+        { from: 'images/neuron-contact-right-2x.png', to: 'images' },
+        { from: 'images/neuron-contact-left-2x.jpg', to: 'images' },
+        { from: 'images/neuron-resume-right-2x.png', to: 'images' },
+        { from: 'images/neuron-resume-left-2x.png', to: 'images' },
     ]),
   ],
 })

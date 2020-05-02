@@ -46,3 +46,27 @@
   margin: 20px 0;
   color: $color-main;
 }
+
+.n-contact-right {
+  position: absolute;
+  right: 0;
+  bottom: -102px;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.n-contact-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (max-width: $breakpoint-desktop-big) {
+    display: none;
+  }
+}
+
+.contact {
+  position: relative;
+}
