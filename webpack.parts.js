@@ -3,6 +3,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 
 const publicPath = '/'
 
@@ -245,6 +246,16 @@ exports.minifyJS = options => ({
       new TerserPlugin(options)
     ]
   }
+})
+
+exports.loadStaticFiles = () => ({
+  plugins: [
+    new CopyPlugin([
+        { from: 'favicon.ico', to: '' },
+        { from: 'contact-form.php', to: '' },
+        { from: 'robots.txt', to: '' }
+    ]),
+  ],
 })
 
 exports.page = ({
