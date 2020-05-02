@@ -258,6 +258,8 @@ exports.loadStaticFiles = () => ({
         { from: 'images/neuron-contact-left-2x.jpg', to: 'images' },
         { from: 'images/neuron-resume-right-2x.png', to: 'images' },
         { from: 'images/neuron-resume-left-2x.png', to: 'images' },
+        { from: 'images/neuron-about-right-2x.png', to: 'images' },
+        { from: 'images/neuron-about-right-top-2x.jpg', to: 'images' },
     ]),
   ],
 })
