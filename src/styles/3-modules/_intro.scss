@@ -11,6 +11,26 @@
   text-align: center;
   position: relative;
 
+  @media (max-width: $breakpoint-mobile) {
+    background-image: url(../../images/bk-intro-mobile.jpg);
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    background-image: url(../../images/bk-intro-tablet.jpg);
+  }
+
+  @media (max-width: $breakpoint-desktop-big) {
+    background-image: url(../../images/bk-intro-laptop.jpg);
+  }
+
+  @media (max-width: $breakpoint-desktop-very-big) {
+    background-image: url(../../images/bk-intro.jpg);
+  }
+
+  @media (min-width: $breakpoint-desktop-very-big) {
+    background-image: url(../../images/bk-intro-4k.jpg);
+  }
+
   &__arrow {
     position: absolute;
     bottom: 10px;
