@@ -251,7 +251,13 @@ exports.minifyJS = options => ({
 exports.loadStaticFiles = () => ({
   plugins: [
     new CopyPlugin([
+        { from: 'android-chrome-192x192.png', to: '' },
+        { from: 'android-chrome-512x512.png', to: '' },
+        { from: 'apple-touch-icon.png', to: '' },
+        { from: 'favicon-16x16.png', to: '' },
+        { from: 'favicon-32x32.png', to: '' },
         { from: 'favicon.ico', to: '' },
+        { from: 'site.webmanifest', to: '' },
         { from: 'contact-form.php', to: '' },
         { from: 'robots.txt', to: '' },
         { from: 'images/bogdan.png', to: 'images' },
