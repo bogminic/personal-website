@@ -83,7 +83,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1"
   }
 }
