@@ -1,0 +1,13 @@
+ /* Variables */
+
+:root {
+  --color-main: #5ac5c4;
+  --color-text: #333;
+  --color-contast: #32323c;
+  --color-grey: #dbdbdb;
+  --color-form: #7e1301;
+  --color-white: #fff;
+
+  --breakpoint-desktop-big: 1400px;
+  --breakpoint-desktop-very-big: 2560px;
+}
