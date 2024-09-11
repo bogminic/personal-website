@@ -1,0 +1,78 @@
+.input {
+    display: block;
+    width: 100%;
+    border-width: 0 0 3px;
+    border-style: none none solid;
+    border-color: var(--color-main);
+    font-size: 16px;
+    letter-spacing: -1px;
+    outline: medium none;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: var(--color-contast);
+    color: var(--color-grey);
+}
+
+@media (min-width: 768px) {
+    .input {
+        width: 66%;
+    }
+}
+
+.error {
+    background: var(--color-form);
+}
+
+.send {
+    padding: 15px;
+    border: 0 none;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 1.1em;
+    outline: medium none;
+}
+
+.send:hover {
+    background: var(--color-contast);
+    color: var(--color-main);
+    cursor: pointer;
+}
+
+.send:disabled {
+    background: #e3e3e3;
+    color: var(--color-contast);
+}
+
+.send-status {
+    margin: 20px 0;
+    color: var(--color-main);
+}
+
+.n-contact-right {
+    position: absolute;
+    right: 0;
+    bottom: -74px;
+}
+
+@media (max-width: 768px) {
+    .n-contact-right {
+        display: none;
+    }
+}
+
+.n-contact-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 1400px) {
+    .n-contact-left {
+        display: none;
+    }
+}
+
+.contact {
+    position: relative;
+}
