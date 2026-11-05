@@ -1,7 +1,9 @@
 .intro {
     height: 100vh;
-    background: gray;
-    background-image: url(../../images/bk-intro.jpg);
+    background-color: gray;
+    background-image: url(/images/bk-intro-mobile.jpg);
+    background-image: image-set(url(/images/bk-intro-mobile.webp) type("image/webp"),
+            url(/images/bk-intro-mobile.jpg) type("image/jpeg"));
     background-size: cover;
     background-position: center;
     display: flex;
@@ -12,33 +14,34 @@
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .intro {
-        background-image: url(../../images/bk-intro-mobile.jpg);
+        background-image: url(/images/bk-intro-tablet.jpg);
+        background-image: image-set(url(/images/bk-intro-tablet.webp) type("image/webp"),
+                url(/images/bk-intro-tablet.jpg) type("image/jpeg"));
     }
 }
 
-@media (max-width: 980px) {
+@media (min-width: 980px) {
     .intro {
-        background-image: url(../../images/bk-intro-tablet.jpg);
+        background-image: url(/images/bk-intro-laptop.jpg);
+        background-image: image-set(url(/images/bk-intro-laptop.webp) type("image/webp"),
+                url(/images/bk-intro-laptop.jpg) type("image/jpeg"));
     }
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
     .intro {
-        background-image: url(../../images/bk-intro-laptop.jpg);
-    }
-}
-
-@media (max-width: 2560px) {
-    .intro {
-        background-image: url(../../images/bk-intro.jpg);
+        /* The JPG is smaller than the WebP at this size, so keep the JPG. */
+        background-image: url(/images/bk-intro.jpg);
     }
 }
 
 @media (min-width: 2560px) {
     .intro {
-        background-image: url(../../images/bk-intro-4k.jpg);
+        background-image: url(/images/bk-intro-4k.jpg);
+        background-image: image-set(url(/images/bk-intro-4k.webp) type("image/webp"),
+                url(/images/bk-intro-4k.jpg) type("image/jpeg"));
     }
 }
 
